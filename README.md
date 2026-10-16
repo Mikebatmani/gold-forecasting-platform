@@ -53,4 +53,4 @@ python src/check_fred.py
 
 ## Status
 
-Sprint 1 of 24: project set-up. See `docs/sprint-log.md`.
+Sprint 2 of 24: data sources (FRED connection and gold source test done). See `docs/sprint-log.md`.
