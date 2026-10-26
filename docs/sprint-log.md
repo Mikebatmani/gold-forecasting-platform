@@ -28,3 +28,19 @@ One entry per sprint: goal, result, and what we change. A dated record of how th
 ### What we change
 
 The first sprints ran about two weeks past their planned dates. The scope is unchanged. Weekly hours rise later in the plan, so the remaining work keeps its full scope and the dates move.
+
+## Sprint 2: Data sources (started Oct 25, 2026)
+
+- **Goal:** Clean daily gold data plus the market series, with monthly numbers stored by release date.
+- **Scope:** unchanged. No task has been removed.
+
+### Progress
+
+| Date | Done | Next |
+|---|---|---|
+| Oct 25, 2026 | Task 2.2: 20 market series downloaded and checked (commit 52bab0b). Task 2.3: CPI, M2 and unemployment saved with first-release dates, 320 months each since 2000, no bad dates (commit 7757de3). | Task 2.4: join everything by release date into one table. |
+
+### Findings so far
+
+- Typical release delay: CPI about 45 days, M2 about 43, unemployment about 34.
+- October 2025 is missing for CPI and unemployment (probably the 2025 government shutdown; to be verified). The table build must carry the last known value forward and mark it stale.
